@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main_graph"
+            app:startDestination="@id/pizzas_list_fragment">
+
+    <fragment
+            android:id="@+id/pizzas_list_fragment"
+            android:name="com.test.nennospizzaandroid.presentation.fragment.PizzasListFragment"
+            android:label="@string/app_name"
+            tools:layout="@layout/fragment_pizzas_list">
+        <action android:id="@+id/action_pizzasListFragment_to_pizzaFragment" app:destination="@id/pizza_fragment"/>
+        <action android:id="@+id/action_pizzasListFragment_to_cardFragment" app:destination="@id/cart_fragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/pizza_fragment"
+            android:name="com.test.nennospizzaandroid.presentation.fragment.PizzaFragment"
+            tools:layout="@layout/fragment_pizza"/>
+    <fragment
+            android:id="@+id/cart_fragment"
+            android:name="com.test.nennospizzaandroid.presentation.fragment.CartFragment"
+            android:label="@string/cart_title"
+            tools:layout="@layout/fragment_cart">
+        <action android:id="@+id/action_cardFragment_to_drinksFragment" app:destination="@id/drinks_fragment"/>
+        <action android:id="@+id/action_cardFragment_to_completeOrderFragment" app:destination="@id/fragment_complete_order"/>
+    </fragment>
+
+    <fragment android:id="@+id/drinks_fragment"
+              android:name="com.test.nennospizzaandroid.presentation.fragment.DrinksFragment"
+              android:label="@string/action_drink"
+              tools:layout="@layout/fragment_drinks"/>
+
+    <fragment android:id="@+id/fragment_complete_order"
+              android:name="com.test.nennospizzaandroid.presentation.fragment.CompleteOrderFragment" android:label="fragment_complete_order"
+              tools:layout="@layout/fragment_complete_order"/>
+
+</navigation>

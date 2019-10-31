@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/background_image_height">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/bg_wood_opt" />
+
+    <ImageView
+        android:id="@+id/pizza_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="60dp"
+        android:adjustViewBounds="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/pizzas_info_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pizza_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/extra_large_text_size"
+            android:textStyle="bold"
+            tools:text="Pizza Title" />
+
+        <TextView
+            android:id="@+id/pizza_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/main_text_size"
+            tools:text="Ingredients info" />
+
+        <Button
+            android:id="@+id/pizza_price_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/price_button_background"
+            android:drawableStart="@mipmap/cart_small"
+            android:drawableLeft="@mipmap/cart_small"
+            android:padding="8dp"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/main_text_size"
+            tools:text="Price" />
+
+    </LinearLayout>
+</FrameLayout>

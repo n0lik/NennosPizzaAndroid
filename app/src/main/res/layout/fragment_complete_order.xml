@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/thanks_label"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/extra_large_text_size"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/navigate_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/total_price_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/back_btn_label"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/main_text_size" />
+
+    </LinearLayout>
+
+</FrameLayout>

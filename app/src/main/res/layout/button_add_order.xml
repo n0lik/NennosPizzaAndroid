@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/added_to_order_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorAccent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="invisible"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/added_to_card_label"
+        android:textColor="@color/primary_text_color"
+        android:textSize="@dimen/main_text_size" />
+
+</LinearLayout>

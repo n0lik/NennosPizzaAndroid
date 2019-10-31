@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Nenno\'s Pizza</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_cart">Cart</string>
+    <string name="action_drink">Drink</string>
+    <string name="add_to_card_label">Add to Card ($%1$s)</string>
+    <string name="added_to_card_label">Added to Card</string>
+    <string name="ingredients_label">Ingredients</string>
+    <string name="pizza_added_to_card">Pizza added to Card (%1$s)</string>
+    <string name="drink_added_to_card">Drink added to Card (%1$s)</string>
+    <string name="custom_pizza_label">Custom Pizza</string>
+    <string name="checkout_label">Checkout ($%1$s)</string>
+    <string name="cart_title">Cart</string>
+    <string name="thanks_label">Thank you for your order</string>
+    <string name="back_btn_label">Back to home</string>
+    <string name="retry_label">Internet Fail! Retry</string>
+</resources>

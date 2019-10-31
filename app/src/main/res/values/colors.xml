@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#F1EDED</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorYellow">#FFC107</color>
+
+    <color name="pizzas_info_background">#803C3C3C</color>
+
+    <!-- Text colors -->
+    <color name="primary_text_color">#FFFFFF</color>
+    <color name="secondary_text_color">#474646</color>
+    <color name="thirdly_text_color">#838282</color>
+
+</resources>
